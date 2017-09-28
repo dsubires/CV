@@ -1,0 +1,104 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc} %setup accents
+\usepackage{marvosym}
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page 
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+%\usepackage{titlesec}					%custom \section
+\usepackage{longtable}
+\usepackage[showframe]{geometry}
+\usepackage{textpos}
+
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge David \textsc{Subires Parra}
+	}\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+%For underline title section --> \section*{\underline{Personal Data}}
+\section*{Información Personal}
+
+\begin{tabular}{rp{12cm}}
+    \textsc{Nacionalidad:} & Española | 08 Mayo 1990 \\
+    \textsc{Dirección:}     & Antas, Almería, España \\
+    \textsc{Teléfono:}       & +55 48 99140 9732 \\
+    \textsc{Email:}       & \href {mailto:dasubipar@gmail.com}{dasubipar@gmail.com} \\
+    \textsc{Web:}     & \url {https://dasubipar.blogspot.com} \\
+    \textsc{Github:}      & \url{https://github.com/dsubires}
+\end{tabular}
+
+%Section: Work Experience at the top
+\section*{Experiencia Laboral}
+\begin{tabular}{r|p{11cm}}
+
+\textsc{Octubre} 2016 & Técnico IT proporcionando desarrollo de software y soporte técnico\\\textsc{Mayo 2016} & en PhonePC SL Almería, España. \normalsize \\\multicolumn{2}{c}{} \\
+
+\textsc{Sept} 2012 & Técnico IT proporcionando soporte técnico y resolución de incidencias\\\textsc{Junio 2012} & en Indatronic SLU Almería, España. \normalsize \\\multicolumn{2}{c}{} \\
+
+\textsc{Junio} 2010 & Técnico IT proporcionando soporte técnico y resolución de incidencias\\\textsc{Marzo 2010} & en Hospital La Inmaculada Almería, España. \normalsize \\\multicolumn{2}{c}{} \\
+
+
+\end{tabular}
+
+%Section: Education
+\section*{Formación}
+
+\begin{tabular}{r|p{11cm}}
+
+\textsc Actualmente & Licenciatura en \textsc{Ciencias de Computación}, \\\textsc{2017}& {Universidad do Vale do Itajaí}, Florianópolis, Brasil \normalsize \\\multicolumn{2}{c}{} \\
+
+\textsc Actualmente & Grado en \textsc{Ingeniería Informática}, \\\textsc{2012} &{Universidad de Almería}, España \normalsize \\\multicolumn{2}{c}{} \\
+
+\textsc 2012 & Grado superior técnico en \textsc{Informática}, \\\textsc{2010} &{IES Celia Viñas}, España \normalsize \\\multicolumn{2}{c}{} \\
+
+\textsc 2010 & Grado medio técnico en \textsc{Informática}, \\\textsc{2008} &{IES Cura Valera}, España \normalsize \\\multicolumn{2}{c}{} \\
+
+\end{tabular}
+
+
+
+%Section: Languages
+\section*{Idiomas}
+\begin{tabular}{rp{12cm}}
+\textsc{Español:} & Nativo \\
+\textsc{Inglés:} & Básico \\
+\textsc{Portugués:} & Básico \\
+
+\end{tabular}
+
+\section*{Habilidades}
+\begin{longtable}
+
+\textbf{Lenguajes de Programación:} & \textsc{Java}, \textsc{C\#},  \textsc{Perl}, \textsc{Shell}, \textsc{PHP}, \textsc{ASP}, \textsc{Javascript} y \textsc{PL-SQL} \\
+\textbf{Bases de Datos:} & \textsc{MySQL}, \textsc{Oracle} y \textsc{SQL Server} \\
+\textbf{Sistemas Operativos:} & \textsc{Linux} y \textsc{MS Windows} \textsc{XP, Vista, 7, 8, 10}. \\
+\textbf{Aplicaciones:} & \textsc{Eclipse}, \textsc{Visual Studio}, \textsc{Visual Paradigm} y \textsc MS Office \\
+\textbf{Otros:} & \textsc{Notepad++}, \textsc{HTML} y \textsc{CSS}
+
+\end{longtable}
+
+
+
+\end{document}
