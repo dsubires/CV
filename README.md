@@ -1,2 +1,3 @@
 # CV
-Currículum Vitae
+Currículum Vitae escrito en LaTeX
+
